@@ -369,13 +369,8 @@
     }
 
     function openModal(filePath, title, category, product, year) {
-      document.getElementById("modal-title").textContent = title;
-      document.getElementById("modal-product").textContent = product;
-      document.getElementById("modal-tag").textContent = category;
-      document.getElementById("modal-year").textContent = year;
-      document.getElementById("pdf-frame").src = filePath;
-      document.getElementById("pdf-modal").classList.remove("hidden");
-    }
+  window.open(filePath, '_blank');
+}
 
     function closeModal() {
       document.getElementById("pdf-modal").classList.add("hidden");
